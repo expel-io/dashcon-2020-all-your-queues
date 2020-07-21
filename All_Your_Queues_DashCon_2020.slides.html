@@ -13365,11 +13365,7 @@ network = ciw.create_network(
                              service_distributions=[ ciw.dists.Deterministic(5) ],
                              number_of_servers=[1]) # Number of "workers"
 Q = ciw.Simulation(network)
-Q.simulate_until_max_time(1440)
-recs = Q.get_all_records()
-
-queue_lens = [ r.queue_size_at_arrival for r in recs ]
-latency = [ r.service_end_date - r.service_start_date for r in recs ]</code></pre>
+Q.simulate_until_max_time(1440)</code></pre>
 
 </div>
 </div>
@@ -13585,13 +13581,6 @@ if (outputEl) {{
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1>What Happens if arrival or service aren't constant?</h1><p><img src="img/queue-random-functions.png" alt="drawing"/></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h1>How to simulate it</h1><p><img src="img/queue-random-functions.png" alt="drawing" width="400"/></p>
 
 <pre><code># Note: We changed our distributions below -- they are now exponentially distributed around
@@ -13600,11 +13589,7 @@ network = ciw.create_network(arrival_distributions=[ ciw.dists.Exponential(1.0/4
                              service_distributions=[ ciw.dists.Exponential(1.0/5) ],
                              number_of_servers=[1])
 Q = ciw.Simulation(network)
-Q.simulate_until_max_time(1440)
-recs = Q.get_all_records()
-
-queue_lens = [ r.queue_size_at_arrival for r in recs ]
-latency = [ r.service_end_date - r.service_start_date for r in recs ]</code></pre>
+Q.simulate_until_max_time(1440)</code></pre>
 
 </div>
 </div>
