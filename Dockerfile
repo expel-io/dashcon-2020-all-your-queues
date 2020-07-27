@@ -12,6 +12,7 @@ WORKDIR /home/dashcon-user
 COPY All_Your_Queues_DashCon_2020.ipynb /home/dashcon-user
 COPY images /home/dashcon-user/images
 COPY arr_times.pickle /home/dashcon-user
+COPY arr_times_csv.zip /home/dashcon-user
 
 COPY Makefile /home/dashcon-user
 
