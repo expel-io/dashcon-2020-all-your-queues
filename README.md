@@ -10,7 +10,9 @@ We've made a few bug fixes since we recorded the presentation, that combined wit
 
 # Files
 * `All_Your_Queues_DashCon_2020.ipynb` -- Notebook with code and presentation.
-* `All_Your_Queues_DashCon_2020.slides.html` -- The slides to present generated from notebook
+* `All_Your_Queues_DashCon_2020.slides.html` -- The slides generated from notebook
+* `arr_times.pickle` -- Pickled dictionary containing list of counts observed for the past year, for a given day, hour and severity. Indexable by day -> hour -> severity (HIGH, MEDIUM, LOW) 
+* `arr_times_csv.zip` -- A CSV of alert arrival times
 
 
 # Usage
