@@ -11,7 +11,7 @@ We've made a few bug fixes since we recorded the presentation, that combined wit
 # Files
 * `All_Your_Queues_DashCon_2020.ipynb` -- Notebook with code and presentation.
 * `All_Your_Queues_DashCon_2020.slides.html` -- The slides generated from notebook
-* `arr_times.pickle` -- Pickled dictionary containing list of counts observed for the past year, for a given day, hour and severity. Indexable by day -> hour -> severity (HIGH, MEDIUM, LOW) 
+* `arr_times.pickle` _(yes, this is poorly named and shouldn't be a pickle file)_ -- Pickled dictionary containing list of counts observed for the past year, for a given day, hour and severity. Indexable by day -> hour -> severity (HIGH, MEDIUM, LOW) 
 * `arr_times_csv.zip` -- A CSV of alert arrival times
 
 
@@ -35,12 +35,12 @@ In all cases the URL for your notebook and security token will print to stdout. 
 
 
 ## Presentation 
-There are two options for viewing the slides:
+There are two options for viewing the slides. We recommend viewing them locally in your browser the docker command has been finicky.
 
-1. View the presentation by running the docker image:
+Option 1: View the presentation by running the docker image:
 ```sh
 $ docker run -it -p 8910:8910 expelio/dashcon-all-your-queues:latest present
 ```
 Navigate your web browser to `http://127.0.0.1:8910/All_Your_Queues_DashCon_2020.slides.html#`
 
-2. View the presentation that is checked into GitHub repo, simply open `All_Your_Queues_DashCon_2020.slides.html`
+Option 2: View the presentation that is checked into GitHub repo, simply open `All_Your_Queues_DashCon_2020.slides.html`
